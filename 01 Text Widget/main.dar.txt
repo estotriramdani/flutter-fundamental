@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Text Widget',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Text Widget'),
+        ),
+        body: Center(
+          child: Container(
+            color: Color(0xFFEAEAEA),
+            height: 300,
+            width: 300,
+            child: Center(
+              child: Text(
+              'Memahami Text Style',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700, fontStyle: FontStyle.italic),
+              textAlign: TextAlign.justify,
+            ),
+            )
+          ),
+        ),
+      ),
+    );
+  }
+}
